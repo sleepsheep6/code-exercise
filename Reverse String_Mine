@@ -1,0 +1,16 @@
+public class Solution {
+    public String reverseString(String s) {
+        if(s==null|| s==""||s.length()==1){
+            return s;
+        }else{
+            int len=s.length();
+            char[] arr=s.toCharArray();
+            for(int i=0;i<len/2;i++){
+                char pre=arr[i];
+                arr[i]=arr[len-i-1];
+                arr[len-i-1]=pre;
+            }
+            return String.valueOf(arr);
+        }
+    }
+}
