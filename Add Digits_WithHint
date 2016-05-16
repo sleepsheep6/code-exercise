@@ -11,6 +11,7 @@ public class Solution {
 }
 
 /**
+https://en.wikipedia.org/wiki/Digital_root
 With this in mind the digital root of a positive integer n may be defined by using floor function \lfloor x\rfloor , as
 
     dr(n)=n-9\left\lfloor\frac{n-1}{9}\right\rfloor. 
