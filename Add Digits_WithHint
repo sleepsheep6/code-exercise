@@ -1,0 +1,17 @@
+public class Solution {
+    public int addDigits(int num) {
+       if(num<10){
+           return num;
+           
+       } else{
+           int ten=num%10;
+           return addDigits(ten+addDigits((num-ten)/10));
+       }
+    }
+}
+
+/**
+With this in mind the digital root of a positive integer n may be defined by using floor function \lfloor x\rfloor , as
+
+    dr(n)=n-9\left\lfloor\frac{n-1}{9}\right\rfloor. 
+**/
