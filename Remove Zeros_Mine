@@ -1,11 +1,11 @@
 public class Solution {
     public void moveZeroes(int[] nums) {
-        if(nums==null ||nums.length()<2){
-            return nums;
+        if(nums==null ||nums.length <2){
+            return ;
         }
         
         int first_zero=-1,cur=0;
-        while(cur<nums.length()){
+        while(cur<nums.length){
             if(nums[cur]==0){
                 if(first_zero==-1)
                 first_zero=cur;
