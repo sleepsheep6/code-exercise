@@ -1,0 +1,18 @@
+public class Solution {
+    public int[] countBits(int num) {
+        if(num <0) return null;
+        int[] res=new int[num+1];
+        res[0]=0;
+        int count=0;
+        int mod=1;
+        for(int i=1;i<=num;i++){
+          if(i==mod*2) {
+              count ++;
+              mod=mod*2;
+          }
+          res[i]=res[i%mod]+1;
+        }
+        
+        return res;
+    }
+}
